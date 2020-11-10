@@ -3,6 +3,7 @@
 #let's start by creating parties:
 
 from random import randint
+nrp = 0
 parties = ["A", "B", "C", "D", "E"]
 
 #let's create 243 voting seats with some ammount of voters
@@ -88,19 +89,24 @@ for votes in boxes:
         nl = randint(1, 5)
         if nl == 1:
             votes["A"] += 1
-            print("A got a vote")
+            nrk += 1
+            print(f"A got a vote, {nrk}/{total}")
         elif nl == 2:
+            nrk += 1
             votes["B"] += 1
-            print("B got a vote")
+            print(f"B got a vote, {nrk}/{total}")
         elif nl == 3:
+            nrk += 1
             votes["C"] += 1
-            print("C got a vote")
+            print(f"C got a vote, {nrk}/{total}")
         elif nl == 4:
+            nrk += 1
             votes["D"] += 1
-            print("D got a vote")
+            print(f"D got a vote, {nrk}/{total}")
         elif nl == 5:
+            nrk += 1
             votes["E"] += 1
-            print("E got a vote")
+            print(f"E got a vote, {nrk}/{total}")
     new_boxes.append(votes)
 print("Voting Complete, Calculating Results")
 
