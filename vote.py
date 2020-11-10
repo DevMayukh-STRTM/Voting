@@ -3,7 +3,7 @@
 #let's start by creating parties:
 
 from random import randint
-nrp = 0
+nrk = 0
 parties = ["A", "B", "C", "D", "E"]
 
 #let's create 243 voting seats with some ammount of voters
